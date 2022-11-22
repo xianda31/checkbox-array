@@ -1,0 +1,22 @@
+<div class="example-section">
+
+  <section [formGroup]="toppings">
+
+
+    <section >
+      <h4>Prototype  entries</h4>
+      <h4>{{getArray().value.length}} entries</h4>
+      <p *ngFor="let fcntrl of getArray()?.value , let i=index">
+        <mat-checkbox formArrayName="i">label[i]</mat-checkbox>
+      </p>
+
+    </section>
+
+    <section [formArrayName="toppings" ]>
+      <h4>Reaction</h4>
+      {{toppings.value | json}}
+    </section>
+
+
+  </section>
+</div>
