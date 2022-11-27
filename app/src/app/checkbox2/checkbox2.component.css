@@ -1,0 +1,22 @@
+.liste{
+  min-width: 50%;
+  background-color: aqua;
+  padding-left: 20px;
+}
+
+.field {
+  display:flex;
+  flex: 1 30px;
+  align-items: center;
+  height: 50px;
+  justify-content:left;
+}
+
+.chkbox{
+  min-width: 20%;
+}
+
+.input{
+
+  min-width: 50%;
+}

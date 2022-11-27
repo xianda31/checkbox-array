@@ -1,0 +1,26 @@
+<div class="liste">
+
+  <section [formGroup]="frmgrp">
+
+    <section formArrayName="array">
+      <h4>version array-based</h4>
+
+      <div class="field" [formGroupName]="i" *ngFor="let cntrl of array.controls ; let i=index">
+        <mat-checkbox class="chkbox" formControlName="chkbxName" (change)="onclick(i)"> {{field[i].label}} </mat-checkbox>
+        <span *ngIf="field[i].selected">
+          <mat-form-field class="input">
+          <mat-label>{{field[i].label}}</mat-label>
+          <input matInput formControlName="inputValue" >
+        </mat-form-field>
+        </span>
+      </div>
+
+      <h4>Reaction</h4>
+      <p>
+
+      </p>
+      {{frmgrp.value | json}}
+    </section>
+  </section>
+
+</div>
