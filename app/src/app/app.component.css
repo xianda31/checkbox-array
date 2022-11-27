@@ -1,0 +1,10 @@
+.tableau{
+  padding-left: 30px;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  width: 80%;
+  justify-content:space-around;
+  border-color: black;
+
+}
